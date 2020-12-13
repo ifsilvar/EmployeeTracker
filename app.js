@@ -37,8 +37,44 @@ var connection = mysql.createConnection({
         "Update employee role",
         "Update employee manager",
         "View all roles",
-        ""
       ]
     })
-    
+    .then(function(answer){
+        switch (answer.action) {
+        case "View all employees":
+
+            break;
+
+        case "View all employees by department":
+
+            break;
+
+        case "View all employees by manager":
+
+            break;
+
+        case "Add an employee":
+
+            break;
+            
+        case "Remove employee":
+
+            break;
+
+        case "Update employee role":
+
+            break;
+
+        case "Update employee manager":
+
+            break;
+        
+
+        case "View all roles":
+
+            break;
+            
+        }
+
+    });
   }
