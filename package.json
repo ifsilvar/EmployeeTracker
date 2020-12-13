@@ -1,5 +1,5 @@
 {
-  "name": "EmployeeTracker",
+  "name": "employee-tracker",
   "version": "1.0.0",
   "description": "node js employee tracker",
   "main": "app.js",
@@ -11,7 +11,7 @@
     "url": "git+https://github.com/ifsilvar/EmployeeTracker.git"
   },
   "keywords": [],
-  "author": "",
+  "author": "Ivan Flores",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/ifsilvar/EmployeeTracker/issues"
