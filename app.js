@@ -97,7 +97,6 @@ var connection = mysql.createConnection({
 
 async function addEmployee() {
     try{
-
         const roles = await viewAll("role")
         const employees = await viewAll("employee")
         return inquirer.prompt(
@@ -118,7 +117,7 @@ async function addEmployee() {
                 type: "list",
                 name: "roleId",
                 choices: roles.map(role => {
-                    return {value: role.id, name: role.title}
+                return {value: role.id, name: role.title}
                 })
             },
             {
@@ -126,7 +125,7 @@ async function addEmployee() {
                 type: "list",
                 name: "managerId",
                 choices: employees.map(manager => {
-                    return {value: manager.id, name: manager.firstName +" "+ manager.lastName}
+                return {value: manager.id, name: manager.firstName +" "+ manager.lastName}
                 })
             }
         ])
